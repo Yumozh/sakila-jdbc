@@ -13,7 +13,7 @@ public class Program {
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setUrl("jdbc:mysql://localhost:3306/sakila");
         dataSource.setUsername("root");
-        dataSource.setPassword("");
+        dataSource.setPassword("yearup26");
 
         String sql = """
                 SELECT actor_id,
@@ -40,8 +40,5 @@ public class Program {
             System.out.println("Failed to retrieve actors. Please try again.");
             e.printStackTrace();
         }
-
-
     }
-}
 }
